@@ -10,7 +10,8 @@ Install via composer `composer require purplespider/asset-alt-text`
 
 Go to the **Files** and select an image to see the new field:
 
-![](https://p.spdr.me/Fl55qH+ | width=500)
+<img src="https://p.spdr.me/Fl55qH+" width="500">
+
 
 To make use of the alt text value in your templates, just use `$AltText`. e.g.:
 ````
