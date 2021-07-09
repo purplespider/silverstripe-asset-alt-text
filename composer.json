@@ -1,0 +1,19 @@
+{
+	"name": "purplespider/asset-alt-text",
+	"description": "Adds an alternative text field to Image assets, so that you don't need to use the image 'Title' field.",
+	"type": "silverstripe-vendormodule",
+	"homepage": "https://github.com/purplespider/silverstripe-asset-alt-text",
+	"keywords": ["silverstripe", "assets", "alt"],
+	"license": "BSD-3-Clause",
+	"authors": [{
+		"name": "James Cocker",
+		"email": "ssmodules@pswd.biz"
+	}],
+	"support": {
+		"issues": "https://github.com/purplespider/silverstripe-asset-alt-text/issues"
+	},
+	"require": {
+        "php": ">=7.2",
+        "silverstripe/asset-admin": "^1.4"
+    }
+}
