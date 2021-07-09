@@ -8,10 +8,11 @@ Install via composer `composer require purplespider/asset-alt-text`
 
 `dev/build`
 
-Go to Assets and select an Image to see the new field:
-![](https://p.spdr.me/Fl55qH+)
+Go to the **Files** and select an image to see the new field:
 
-To make use of the alt text in your templates, just use `$AltText`. e.g.:
+![](https://p.spdr.me/Fl55qH+ | width=500)
+
+To make use of the alt text value in your templates, just use `$AltText`. e.g.:
 ````
 <% with BannerImage %>
     <img src="$URL" width="$Width" height="$Height" alt="$AltText" />
