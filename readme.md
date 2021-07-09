@@ -2,6 +2,8 @@
 
 Adds an alternative text field to Image assets, so that you don't need to use the image `Title` field (which would typically be more succinct than useful alt text).
 
+As a bonus feature, when adding an image to an `HTMLEditorField`, the alt text field gets pre-filled with any asset alt text.
+
 ## Usage
 
 Install via composer `composer require purplespider/asset-alt-text`
