@@ -12,7 +12,7 @@ SilverStripe\Assets\Image:
   imageWithTitleAndNoAltText:
     Title: The image title
     AltText: ''
-    FileFilename: folder/test-image1.png
+    FileFilename: folder/test-image.png
     FileHash: 444065542b5dd5187166d8e1cd684e0d724c5a97
     Parent: =>SilverStripe\Assets\Folder.folder1
-    Name: test-image1.png
+    Name: test-image.png
