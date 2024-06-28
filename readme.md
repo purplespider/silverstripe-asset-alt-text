@@ -1,4 +1,4 @@
-# Asset Alt Text for Silverstripe 4
+# Asset Alt Text for Silverstripe
 
 Adds an alternative text field to Image assets, so that you don't need to use the image `Title` field (which would typically be more succinct than useful alt text).
 
