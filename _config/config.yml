@@ -4,7 +4,9 @@ Name: asset-alt-text
 SilverStripe\Assets\Image:
   extensions:
     - PurpleSpider\AssetAltText\ImageExtension
-    
+SilverStripe\Assets\Storage\DBFile:
+  extensions:
+    - PurpleSpider\AssetAltText\ImageExtension
 SilverStripe\AssetAdmin\Forms\FileFormFactory:
   extensions:
     - PurpleSpider\AssetAltText\FileFormFactoryExtension
