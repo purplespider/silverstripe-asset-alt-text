@@ -2,12 +2,11 @@
 
 namespace PurpleSpider\AssetAltText;
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 
-class ImageExtension extends DataExtension
+class ImageExtension extends Extension
 {
-
-    private static $db = [
+    private static array $db = [
         "AltText" => "Text",
     ];
 
@@ -16,10 +15,10 @@ class ImageExtension extends DataExtension
      * via ImageManipulation trait extension
      * @param array $attributes
      */
-    public function updateAttributes(array &$attributes) {
+    public function updateAttributes(array &$attributes): void
+    {
         if(!is_null($this->owner->AltText) && $this->owner->AltText !== '') {
             $attributes['alt'] = $this->owner->AltText;
         }
     }
-
 }

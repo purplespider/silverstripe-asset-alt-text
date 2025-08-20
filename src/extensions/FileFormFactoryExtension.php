@@ -2,17 +2,17 @@
 
 namespace PurpleSpider\AssetAltText;
 
+use SilverStripe\Core\Extension;
 use SilverStripe\Forms\Tip;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
-use SilverStripe\ORM\DataExtension;
 use SilverStripe\Forms\TippableFieldInterface;
 
-class FileFormFactoryExtension extends DataExtension
+class FileFormFactoryExtension extends Extension
 {
-    public function updateFormFields(FieldList $fields, $controller, $formName, $context)
+    public function updateFormFields(FieldList $fields, $controller, $formName, $context): void
     {
-        $image = isset($context['Record']) ? $context['Record'] : null;
+        $image = $context['Record'] ?? null;
         if ($image && $image->appCategory() === 'image') {
 
             $altTextField = TextField::create('AltText', 'Alternative text (alt)');
@@ -36,8 +36,6 @@ class FileFormFactoryExtension extends DataExtension
                     $altTextField
                 );
             }
-
         }
     }
-
 }
