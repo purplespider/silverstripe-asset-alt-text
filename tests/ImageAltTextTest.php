@@ -3,13 +3,12 @@
 namespace PurpleSpider\AssetAltText\Tests;
 
 use PurpleSpider\AssetAltText\ImageExtension;
-use SilverStripe\Assets\Image;
+use Silverstripe\Assets\Dev\TestAssetStore;
 use SilverStripe\Assets\File;
 use SilverStripe\Assets\Folder;
+use SilverStripe\Assets\Image;
 use SilverStripe\Assets\InterventionBackend;
-use Silverstripe\Assets\Dev\TestAssetStore;
 use SilverStripe\Dev\SapphireTest;
-use SilverStripe\View\SSViewer;
 
 /**
  * Tests for applying Image.AltText
